@@ -160,6 +160,7 @@ declare module lui {
         disabled?: boolean;
         display?: string;
         placeholder?: number | string;
+        style?: string;
         requiredError?: string;
         emailError?: string;
         ibanError?: string;
@@ -204,6 +205,7 @@ declare module lui.iban {
         templateUrl: string;
         require: string[];
         controller: string;
+        scope: {};
         static factory(): angular.IDirectiveFactory;
         link(scope: ILuidIbanScope, element: angular.IAugmentedJQuery, attrs: angular.IAttributes & {
             isRequired: boolean;
